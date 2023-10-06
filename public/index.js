@@ -1,6 +1,8 @@
 const tableContent = $("#tableContent");
 const errorContent = $("#error");
 
+let loadedImovel = {};
+
 const dicionarioStatus = {
     A: 'Alugado',
     V: 'Vendido',
@@ -22,7 +24,6 @@ $(document).ready(function() {
       affixesStay: false, // Remove o prefixo/sufixo quando o usuário digitar
     });
 
-    let loadedImovel = {};
     refresh();
 });
 
